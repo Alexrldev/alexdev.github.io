@@ -6,6 +6,7 @@ html, body
 
 body
 {
+    font-family: "Arial";
     height: 100vh;
     background: linear-gradient(to bottom, #ff0000b0, white);
     background-repeat: no-repeat;
