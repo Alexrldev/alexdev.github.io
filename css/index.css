@@ -6,13 +6,25 @@ html, body
 
 body
 {
+    font-family: "Arial";
     height: 100vh;
     background: linear-gradient(to bottom, #ff0000b0, white);
     background-repeat: no-repeat;
 }
 
-h1
+header h1
 {
     color: white;
+    text-align: center;
+}
+
+header hr
+{
+    width: 40%;
+    border-color: rgb(213, 208, 201);
+}
+
+main .pdatos h2
+{
     text-align: center;
 }
