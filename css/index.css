@@ -12,13 +12,84 @@ body
     background-repeat: no-repeat;
 }
 
+header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
 header h1
 {
     color: white;
     text-align: center;
+    margin: 2vw;
 }
 
-main .pdatos h2
+.list-menu
 {
-    text-align: center;
+    text-decoration: none;
+}
+
+.list-menu li
+{
+    display: inline;
+    margin-right: 2vw;
+    padding: 5px;
+}
+
+.list-menu li a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.list-menu li:hover
+{
+    background-color: aliceblue;
+}
+
+hr
+{
+    margin: 0;
+}
+
+main
+{
+    margin: 5vh 20vw 0 20vw;
+}
+
+.pdatos
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pdatos .pdatos-img
+{
+
+}
+
+.pdatos .pdatos-npe
+{
+    margin-top: 5vh;
+}
+
+.pdatos .pdatos-npe span
+{
+
+}
+
+.pdatos-lengua
+{
+    display: flex;
+    gap: 5vw;
+    border: 1px solid gray
+
+}
+
+.pdatos-lengua--desc
+{
+    border: .5px solid azure;
 }
