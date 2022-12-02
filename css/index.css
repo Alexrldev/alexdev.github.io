@@ -56,7 +56,7 @@ hr
 
 main
 {
-    margin: 5vh 20vw 0 20vw;
+    margin: 5vh 15vw 0 15vw;
 }
 
 .pdatos
@@ -85,11 +85,41 @@ main
 {
     display: flex;
     gap: 5vw;
-    border: 1px solid gray
-
 }
 
 .pdatos-lengua--desc
 {
-    border: .5px solid azure;
+    text-align: center;
+    padding: 2vw;
+}
+
+.pdatos-lengua--desc .lenguage-img
+{
+    margin-bottom: 1em;
+}
+.pdatos-lengua--desc .lenguage-img img
+{
+    width: 50%;
+}
+
+.proy h2
+{
+    text-align: center;
+}
+
+.proy-cuadros
+{
+    display: flex;    
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+
+.proy-cuadros .proy-cuadros--cuadro
+{
+    width: 25%;
+    margin: 2em 0;
+    border-radius: 1em;
+    text-align: center;
+    box-shadow: 1px 0px 40px 0px rgba(0,0,0,0.25);
 }
