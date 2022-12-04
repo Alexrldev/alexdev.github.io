@@ -35,7 +35,8 @@ header h1
 {
     display: inline;
     margin-right: 2vw;
-    padding: 5px;
+    padding: 10px;
+    border-radius: 30px;
 }
 
 .list-menu li a
@@ -51,7 +52,8 @@ header h1
 
 hr
 {
-    margin: 0;
+    margin: 0 auto;
+    width: 50%;
 }
 
 main
@@ -122,4 +124,29 @@ main
     border-radius: 1em;
     text-align: center;
     box-shadow: 1px 0px 40px 0px rgba(0,0,0,0.25);
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.proy-cuadros .proy-cuadros--cuadro:hover
+{
+    transform: translateY(-.5em);
+    box-shadow: 1px 8px 40px 0px rgba(0,0,0,0.25);
+}
+
+.proy-cuadros .proy-cuadros--cuadro .cuadros--items
+{
+    margin: 1em;
+}
+
+.proy-cuadros .proy-cuadros--cuadro .cuadros--items h3
+{
+    margin: .5em 0;
+}
+
+.proy-cuadros .proy-cuadros--cuadro .descripcion
+{
+    margin-top: .5em;
+    font-size: .9em;
+    text-align: left;
 }
