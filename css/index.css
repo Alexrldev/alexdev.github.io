@@ -7,7 +7,8 @@ html, body
 body
 {
     font-family: "Arial";
-    height: 100vh;
+    font-weight: bold;
+    /*height: 100vh;*/
     background: linear-gradient(to bottom, #ff0000b0, white);
     background-repeat: no-repeat;
 }
@@ -34,20 +35,25 @@ header h1
 .list-menu li
 {
     display: inline;
+    font-weight: bold;
     margin-right: 2vw;
-    padding: 10px;
+    padding: 15px;
     border-radius: 30px;
+    cursor: pointer;
+    transition: all 1s;
 }
 
 .list-menu li a
 {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .list-menu li:hover
 {
-    background-color: aliceblue;
+    background-color: rgba(186, 1, 1, 0.622);
+    /*background-color: aliceblue;*/
+    transition: all 1s;
 }
 
 hr
@@ -58,7 +64,7 @@ hr
 
 main
 {
-    margin: 5vh 15vw 0 15vw;
+    margin: 5vh 15vw;
 }
 
 .pdatos
@@ -76,6 +82,8 @@ main
 .pdatos .pdatos-npe
 {
     margin-top: 5vh;
+    font-size: 2.5em;
+    font-weight:normal;
 }
 
 .pdatos .pdatos-npe span
@@ -120,6 +128,7 @@ main
 .proy-cuadros .proy-cuadros--cuadro
 {
     width: 25%;
+    background-color: #f9cccc;
     margin: 2em 0;
     border-radius: 1em;
     text-align: center;
@@ -132,6 +141,11 @@ main
 {
     transform: translateY(-.5em);
     box-shadow: 1px 8px 40px 0px rgba(0,0,0,0.25);
+}
+
+.proy-cuadros .proy-cuadros--cuadro img
+{
+    width: 100%;
 }
 
 .proy-cuadros .proy-cuadros--cuadro .cuadros--items
@@ -149,4 +163,39 @@ main
     margin-top: .5em;
     font-size: .9em;
     text-align: left;
+}
+
+.contacto h2
+{
+    text-align: center;
+}
+
+.contacto .contacto-con
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacto .contacto-con .contacto-con--item .correo
+{
+    display: flex;
+    align-items: center;
+}
+
+.contacto .contacto-con .contacto-con--item .correo svg
+{
+    margin-right: 5px;
+}
+
+.contacto .contacto-con .contacto-con--item .bi
+{
+    height: 30px;
+    width: 30px;
+    color: gray;
+}
+
+footer
+{
+    border-top: solid 1px rgb(207, 207, 207);
+    text-align: center;
 }

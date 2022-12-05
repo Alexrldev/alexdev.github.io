@@ -1,8 +1,11 @@
-const cuadros=document.querySelectorAll(".proy-cuadros--cuadro");
-cuadros.forEach((cuadro) => 
-{
-    cuadro.addEventListener("click", () =>
+const cuadro1=document.querySelector(".cuadro-1");
+const cuadro2=document.querySelector(".cuadro-2");
+    cuadro1.addEventListener("click", () =>
     {
-        location.href="https://google.com";
+        location.href="html/copy-coin/index.html";
     });    
-});
+
+    cuadro2.addEventListener("click",()=>
+    {
+        location.href="html/formulario/index.html"
+    });
