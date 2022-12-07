@@ -6,7 +6,6 @@
 
 html,body
 {
-    background-color: #161717;
     margin: 0;
 }
 
@@ -14,15 +13,20 @@ html,body
 {
     display: flex;
     position: absolute;
+    background-color: #161717;
     width: 100%;
     height: 100%;
     justify-content: center;
     align-items: center;
 }
 
-h1, h2
+h1
 {
-    margin: 0;
+    margin-bottom: 1.7em;
+}
+h2
+{
+    margin:0 0 1.5em 0;
 }
 
 section
@@ -30,10 +34,10 @@ section
     display: flex;
     flex-direction: column;
     /*align-items: center;*/
-    gap: 30px;
+    /*gap: 30px;*/
     width: 500px;
+    height: 100vh;
     margin: auto;
-    padding: 20px 0;
 }
 
 .botones-is
@@ -41,6 +45,7 @@ section
     display: flex;
     flex-direction: row;
     gap: 15px;
+    margin-bottom: 1.5em;
 }
 
 button
@@ -107,6 +112,7 @@ hr
     flex-grow: 1;
     border: none;
     border-top: 1px solid #798282;
+    margin-bottom: 1.5em;
 }
 
 .login
@@ -167,4 +173,43 @@ button:hover
 {
     opacity: .75;
     transition: opacity .3s;
+}
+
+.light
+{
+    background-color: white;
+    color: black;
+}
+
+.input_light, .input_light
+{
+    background-color: #f5f5f5ea;
+    border-color:#f5f5f5ea;
+}
+
+.input_light:hover, .input_light:focus
+{
+    background-color: #ffffff;
+}
+
+.light-dark
+{
+    display: block;
+    width: 3em;
+    position: relative;
+    top: 75px;
+    left: 430px;
+    background-color: gainsboro;
+}
+
+.light-dark .bi-moon-fill
+{
+    padding: .5em;
+    fill: black;
+}
+
+.light-dark .bi-moon-fill-d
+{
+    padding: .5em;
+    fill: white;
 }
