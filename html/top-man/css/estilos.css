@@ -1,0 +1,103 @@
+body
+{
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+}
+
+h1
+{
+    text-align: center;
+}
+
+main
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2em;
+}
+
+.spinner
+{
+    display: flex;
+    height: 75vh;
+    align-content: center;
+    align-items: center;
+}
+
+.spinner span
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid black;
+    border-color: black transparent black transparent;
+    animation: vueltas 1s linear infinite;
+}
+
+@keyframes vueltas 
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }    
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+img
+{
+    width: 75%;
+    height: 24em;
+}
+
+h2
+{
+    font-size: 1em;
+}
+
+article
+{
+    text-align: center;
+   /* border: 2px solid gainsboro;*/
+    padding: 1.2em;
+    width: 30%;
+}
+p
+{
+    text-align: left;
+    font-size: 0.9em;
+}
+
+@media screen and (max-width:720px)
+{
+    main
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    article
+    {
+        width: 75%;
+    }
+    img
+    {
+        width: 15em;
+    }
+    h2
+    {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width:420px)
+{
+    img
+    {
+        width: 10em;
+        height: 18em;
+    }
+}

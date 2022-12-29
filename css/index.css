@@ -4,6 +4,67 @@ html, body
     padding: 0;
 }
 
+.menu-lista
+{
+    display: block;
+    right: 100vw;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 230, 220);
+    transition: all 1s ease;
+}
+
+.menu-lista .list-menu
+{
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
+    align-items: center;
+    margin-top: 3.5em;
+    padding: 0;
+}
+
+.menu-lista .list-menu li
+{
+    margin: .5em 0;
+    transition: none;
+}
+
+.menu-lista .list-menu li:hover
+{
+    background-color: white;
+}
+
+.menu-lista .list-menu li a
+{
+    color: rgb(130, 130, 130);
+}
+
+.menu-lista .cerrar
+{
+    position: absolute;
+    right: 7vw;
+    top: 2em;
+}
+
+.menu
+{
+    display: none;
+}
+
+h2
+{
+    font-weight: bold;
+}
+
+h3
+{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 body
 {
     font-family: "Arial";
@@ -27,9 +88,15 @@ header h1
     margin: 2vw;
 }
 
+.menu .bi-list
+{
+    display: none;
+}
+
 .list-menu
 {
     text-decoration: none;
+    margin: 0;
 }
 
 .list-menu li
@@ -72,16 +139,21 @@ main
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 .pdatos .pdatos-img
 {
+}
 
+.pdatos .pdatos-img img
+{
+    border-radius: 50%;
+    width: 15vw;
 }
 
 .pdatos .pdatos-npe
 {
-    margin-top: 5vh;
     font-size: 2.5em;
     font-weight:normal;
 }
@@ -91,30 +163,74 @@ main
 
 }
 
+.lengcontainer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 0;
+}
+
+.tituloLeng
+{
+    margin-top: 1vw;
+}
+
 .pdatos-lengua
 {
     display: flex;
-    gap: 5vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pdatos-lengua .boton_slide
+{
+    display: none;
+}
+
+.pdatos-lengua .logos
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .pdatos-lengua--desc
 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     padding: 2vw;
+    /*width: 4.6em;*/
 }
 
 .pdatos-lengua--desc .lenguage-img
 {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
+    width: 8vw;
+}
+
+.pdatos-lengua--desc span
+{
+    font-weight: 100;
+    font-size: 1em;
 }
 .pdatos-lengua--desc .lenguage-img img
 {
     width: 50%;
 }
 
+.proy
+{
+    margin-top: 1.5em;
+}
+
 .proy h2
 {
     text-align: center;
+    margin-bottom: 0;
 }
 
 .proy-cuadros
@@ -168,6 +284,7 @@ main
 .contacto h2
 {
     text-align: center;
+    margin: 1em 0;
 }
 
 .contacto .contacto-con
@@ -180,6 +297,12 @@ main
 {
     display: flex;
     align-items: center;
+}
+
+.contacto .contacto-con .contacto-con--item a
+{
+    text-decoration: none;
+    color: black;
 }
 
 .contacto .contacto-con .contacto-con--item .correo svg
@@ -198,4 +321,195 @@ footer
 {
     border-top: solid 1px rgb(207, 207, 207);
     text-align: center;
+}
+
+footer p
+{
+    margin: .5em 0;
+}
+
+@media screen and (max-width:960px) 
+{
+    header h1
+    {
+        margin: 0.7em 0 0.7em 2vw;
+        font-size: 1.5em;
+    }
+
+    .pdatos .pdatos-npe span    
+    {
+        font-size: .8em;
+    }
+
+    .proy-cuadros
+    {
+        flex-direction: column;
+    }
+
+    .proy-cuadros .proy-cuadros--cuadro
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:720px) 
+{
+    nav
+    {
+        display: none;
+    }
+
+    .menu
+    {
+        display: block;
+    }
+    
+    .menu .bi-list
+    {
+        display: block;
+        color: white;
+        width: 2em;
+        height: 2em;
+    }
+
+    main
+    {
+        margin-top: 1em;
+    }
+
+    .pdatos .pdatos-npe span
+    {
+        font-size: 0.52em;
+    }
+
+    .pdatos-lengua
+    {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .pdatos-lengua .boton_slide
+    {
+        display: block;
+        height: 9vh;
+    }
+
+    .pdatos-lengua .logos
+    {
+        /* flex-direction: row; */
+        right: 0;
+        flex-wrap: nowrap;
+        position: relative;
+        transition: all 1s ease;
+    }
+
+    .pdatos-lengua .boton_slide
+    {
+        z-index: 2;
+    }
+    .pdatos-lengua .boton_slide button
+    {
+        border: none;
+        background-color: white;
+        opacity: 0.2;
+        height: inherit;
+    }
+
+    .pdatos-lengua .left
+    {
+        position: relative;
+        left: 2vw;
+    }
+    .pdatos-lengua .right
+    {
+        position: relative;
+        right: 66vw;
+    }
+
+    .pdatos-lengua--desc
+    {
+        padding: 2vw 1px;
+        max-width: 8em;
+    }
+    .pdatos-lengua--desc .lenguage-img
+    {
+        margin-bottom: 0.5em;
+        width: 16vw;
+    }
+}
+
+@media screen and (max-width:576px) 
+{
+    h1
+    {
+        font-size: 1.5em;
+        margin-left: 1em;
+    }    
+    h3
+    {
+        font-size: 1em;
+    }
+
+    .pdatos-lengua .left
+    {
+        position: relative;
+        left:4.5vw;
+    }
+
+    .pdatos-lengua .right
+    {
+        right: 68vw;
+    }
+    
+    .contacto .contacto-con
+    {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .menu-lista .list-menu li:hover
+    {
+        transition: none;
+        background-color: transparent;
+    }
+
+    .contacto .contacto-con .contacto-con--item .bi
+    {
+        width: 1em;
+    }
+    .contacto .contacto-con .contacto-con--item span
+    {
+        font-size: .8em;
+        font-weight: 100;
+    }
+}
+
+@media screen and (max-width:420px) 
+{
+    header h1
+    {
+        font-size: 1.2em;
+    }
+
+    .menu .bi-list
+    {
+        width: 1.4em;
+        height: 1.4em;
+    }
+
+    .pdatos .pdatos-npe span
+    {
+        font-size: .4em;
+    }
+    .pdatos-lengua .left
+    {
+        left:5vw;
+    }
+    .pdatos-lengua .right
+    {
+        right: 71.5vw;
+    }
 }
