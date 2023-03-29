@@ -4,6 +4,7 @@ const cuadro1=document.querySelector(".cuadro-1");
 const cuadro2=document.querySelector(".cuadro-2");
 const cuadro3=document.querySelector(".cuadro-3");
 const cuadro4=document.querySelector(".cuadro-4");
+const cuadro5=document.querySelector(".cuadro-5");
 const listaResponsive=[...document.getElementsByClassName("element-menu")];
 const contenedor=document.querySelector(".pdatos-lengua");
 const eleSlider=document.querySelectorAll(".pdatos-lengua--desc");
@@ -86,6 +87,10 @@ var ba=0;
     cuadro4.addEventListener("click",()=>
     {
         location.href="html/top-man/index.html"
+    });
+    cuadro5.addEventListener("click",()=>
+    {
+        location.href="html/memo-react/index.html"
     });
 slider();
 window.addEventListener("resize",()=>
