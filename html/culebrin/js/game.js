@@ -7,6 +7,7 @@ var dir=1;
 var score=0;
 var pause=false;
 const RANCHO=10, RALTO=10, VEL=10;
+var numObstaculos=8;
 var obstaculos = new Array();
 var gameover=false;
 var max=0;
@@ -160,7 +161,8 @@ function paint(ctx)
 			{
 				max=score;
 			}
-			ctx.fillText("PUNTUACIÓN MAXIMA: "+max,centerWidth,centerHeight+15);
+			ctx.fillText("PUNTUACIÓN: "+score,centerWidth,centerHeight+30);
+			ctx.fillText("PUNTUACIÓN MAXIMA: "+max,centerWidth,centerHeight+45);
 		}
 		else
 			ctx.fillText('PAUSA', centerWidth, centerHeight); 
@@ -193,7 +195,7 @@ function init()
 	food = new Rectangle (random(canvas.width/RANCHO)*10,random(canvas.height/RALTO)*10,RANCHO,RALTO);
 
 	//crear obstaculos
-	for (var i = 0; i<4; i++)
+	for (var i = 0; i<numObstaculos; i++)
 	{
 		obstaculos.push(new Rectangle(random(canvas.width/RANCHO)*10, random(canvas.height/RALTO,1)*10, RANCHO,RALTO));
 		//verificamos que no esten en la misma posicion

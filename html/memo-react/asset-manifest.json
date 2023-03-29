@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "./static/css/main.0ff96ecf.css",
+    "main.js": "./static/js/main.716843a2.js",
+    "static/media/cebolla.jpg": "./static/media/cebolla.0a926eb323477e940750.jpg",
+    "static/media/pepino.jpg": "./static/media/pepino.af32e20e474d14f29808.jpg",
+    "static/media/papa.webp": "./static/media/papa.fe5f00ca43b6d30eb729.webp",
+    "static/media/zana.jpg": "./static/media/zana.0eb57c0b3de5e49720b1.jpg",
+    "static/media/limon.webp": "./static/media/limon.94cb48fe0890174609e2.webp",
+    "static/media/lechuga.jpg": "./static/media/lechuga.20836586526b865cc198.jpg",
+    "static/media/col.webp": "./static/media/col.b1eb82502aab80d3a6d2.webp",
+    "static/media/acelga.jpg": "./static/media/acelga.1f5e6feaa07a83092b68.jpg",
+    "static/media/calabaza.jpg": "./static/media/calabaza.6619d42cdc28d6558173.jpg",
+    "static/media/berenjena.jpg": "./static/media/berenjena.29dc64a7d503f2371e94.jpg",
+    "index.html": "./index.html",
+    "main.0ff96ecf.css.map": "./static/css/main.0ff96ecf.css.map",
+    "main.716843a2.js.map": "./static/js/main.716843a2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0ff96ecf.css",
+    "static/js/main.716843a2.js"
+  ]
+}
