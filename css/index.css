@@ -12,7 +12,7 @@ html, body
     z-index: 3;
     width: 100%;
     height: 100%;
-    background-color: rgba(245, 230, 220);
+    background-color:rgb(84, 84, 84);
     transition: all 1s ease;
 }
 
@@ -39,7 +39,7 @@ html, body
 
 .menu-lista .list-menu li a
 {
-    color: rgb(130, 130, 130);
+    color: white;
 }
 
 .menu-lista .cerrar
@@ -69,8 +69,10 @@ body
 {
     font-family: "Arial";
     font-weight: bold;
+    color: white;
     /*height: 100vh;*/
-    background: linear-gradient(to bottom, #ff0000b0, white);
+    background:rgb(31, 31, 31);
+   /* background: linear-gradient(to bottom, #ff0000b0, white);*/
     background-repeat: no-repeat;
 }
 
@@ -244,7 +246,8 @@ main
 .proy-cuadros .proy-cuadros--cuadro
 {
     width: 25%;
-    background-color: #f9cccc;
+    background: radial-gradient(circle, rgb(101, 109, 141) 0%, rgb(48, 48, 48) 100%);
+    /*background-color: #575757;*/
     margin: 2em 0;
     border-radius: 1em;
     text-align: center;
@@ -302,7 +305,7 @@ main
 .contacto .contacto-con .contacto-con--item a
 {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .contacto .contacto-con .contacto-con--item .correo svg
