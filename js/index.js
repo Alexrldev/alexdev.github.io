@@ -5,6 +5,8 @@ const cuadro2=document.querySelector(".cuadro-2");
 const cuadro3=document.querySelector(".cuadro-3");
 const cuadro4=document.querySelector(".cuadro-4");
 const cuadro5=document.querySelector(".cuadro-5");
+const cuadro6=document.querySelector(".cuadro-6");
+
 const listaResponsive=[...document.getElementsByClassName("element-menu")];
 const contenedor=document.querySelector(".pdatos-lengua");
 const eleSlider=document.querySelectorAll(".pdatos-lengua--desc");
@@ -91,6 +93,10 @@ var ba=0;
     cuadro5.addEventListener("click",()=>
     {
         location.href="html/memo-react/index.html"
+    });
+    cuadro6.addEventListener("click",()=>
+    {
+        location.href="html/trivia"
     });
 slider();
 window.addEventListener("resize",()=>
